@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.0_400619fd0255a62b4d2e95dda8f916430ce92e57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_f2a51bde296cdce762a3a47c0a1fb5d3ea00609e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_8218dfdbdcf294e97c69eac0a87acc98f3a7c9ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_c627c887181c6f46498786e50eb431c219ae3d54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_1d28d3ae9007d004fa2cda670affb2c259be7e19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/glide-3.7.0_fe230483c976b80db58cf16274342c67d1e89298.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_8eeb56068b9e2e1a4fafeb5f47a6643bfb5f3765.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_9908669dd56547fe2dc42114708ac625c19ded06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_888886420af913529e8ea233a8e074df10064b44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_201a18aa347dbca81024f465c64c797f0427b92b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.airsaid.library/pickerviewlibrary/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4d45729320b20ea59f4bc977d47f716398efc905">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.airsaid.library-pickerviewlibrary-1.0.0_b4d0bb9a7607df15d5582f7869672b503cb90351.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_d248968228002cd7ce4c28bed402b649d9385a50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.10.1/645f1ad2f6f4cbad1cde4c483eae71e4051be6ef/jsoup-1.10.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="645f1ad2f6f4cbad1cde4c483eae71e4051be6ef">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/jsoup-1.10.1_7f1a607029536dbc99063b336900d33120a77415.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.orhanobut/logger/1.15/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2a156b99fc7cc034308f942906b09d32754a4470">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.orhanobut-logger-1.15_2b447d3e3ecccea85145720928be7f997f9f9b29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_0a67b082c82a45d9ff63ed8d6de4612476832300.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.github.codbking/CalendarExaple/v1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="acfec37f78816f0fc33fd7843efe6aa15d81fd70">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.github.codbking-CalendarExaple-v1.0.0_9e02851b8b968aadadb67b505fe95648a00cc460.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/Users/hongzhenyue/AndroidStudioProjects/MyView/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.0_da39ceee68b521b0135b589a29f709a545151b1b.jar" />
+    </item>
+
+</items>

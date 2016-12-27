@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mtelnet.myview">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".View1Activity">
+        </activity>
+        <activity android:name=".lunboActivity">
+        </activity>
+        <activity android:name=".IOSDialogActivity">
+        </activity>
+        <activity android:name=".View2Activity">
+        </activity>
+        <activity android:name=".View3Activity">
+        </activity>
+        <activity android:name=".NotificationActivity">
+        </activity>
+        <activity android:name=".AddAndSubActivity">
+        </activity>
+        <activity android:name=".DrawTextToBitmapActivity">
+        </activity>
+        <activity android:name=".CircleProgressBarActivity">
+        </activity>
+        <activity android:name=".EditInputActivity">
+        </activity>
+        <activity android:name=".ScrollingActivity"/>
+        <activity android:name=".zoomanim.FeedActivity"/>
+        <activity android:name=".zoomanim.DetailActivity"/>
+        <activity android:name=".JsoupActivity">
+        </activity>
+        <activity android:name=".SymptomActivity">
+        </activity>
+        <activity android:name=".RefreshLayoutActivity">
+        </activity>
+        <activity android:name=".CalendarActivity">
+        </activity>
+    </application>
+
+</manifest>
