@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     String str14 = "标签云";
     String str15 = "下拉刷新RefreshLayout";
     String str16 = "日历";
+    String str17 = "仿微信朋友圈图片拖拽透明返回";
     private List<String> mList = new ArrayList<>();
 
     @Override
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add(str14);
         mList.add(str15);
         mList.add(str16);
+        mList.add(str17);
 
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycle);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -107,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                         goTargetPage(RefreshLayoutActivity.class);
                     }else if (position==15){
                         goTargetPage(CalendarActivity.class);
+                    }else if (position==16){
+                        goTargetPage(DragPhotoViewActivity.class);
                     }
                 }
             });

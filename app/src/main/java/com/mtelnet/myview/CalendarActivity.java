@@ -76,7 +76,7 @@ public class CalendarActivity extends AppCompatActivity {
         mCalendarDateView.setAdapter(new CaledarAdapter() {
             @Override
             public View getView(View convertView, ViewGroup parentView, CalendarBean bean) {
-
+//                想要设置选中效果，只需设置CaledarAdapter中的view的选中背景
                 if (convertView == null) {
                     convertView = LayoutInflater.from(parentView.getContext()).inflate(R.layout.item_calendar, null);
                     //设置calendar item的大小 48

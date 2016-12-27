@@ -40,4 +40,6 @@ dependencies {
 
     //calendar
     compile 'com.github.codbking:CalendarExaple:v1.0.0'
+//    微信拖拽透明返回 PhotoView
+    compile 'com.github.githubwing:DragPhotoView:1.0.1'
 }

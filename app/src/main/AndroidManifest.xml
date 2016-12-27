@@ -48,6 +48,12 @@
         </activity>
         <activity android:name=".CalendarActivity">
         </activity>
+        <activity
+            android:name=".DragPhotoViewActivity"
+        >            <!--android:theme="@style/translucent"-->
+        </activity>
+        <activity android:name=".DragPhotoActivity">
+        </activity>
     </application>
 
 </manifest>
