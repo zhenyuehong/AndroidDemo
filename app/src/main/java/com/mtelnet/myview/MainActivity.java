@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.mtelnet.myview.jsoup.JsoupActivity;
 import com.mtelnet.myview.zoomanim.FeedActivity;
 
 import java.util.ArrayList;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     String str15 = "下拉刷新RefreshLayout";
     String str16 = "日历";
     String str17 = "仿微信朋友圈图片拖拽透明返回";
+    String str18 = "VR demo";
     private List<String> mList = new ArrayList<>();
 
     @Override
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add(str15);
         mList.add(str16);
         mList.add(str17);
+        mList.add(str18);
 
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycle);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -111,6 +114,8 @@ public class MainActivity extends AppCompatActivity {
                         goTargetPage(CalendarActivity.class);
                     }else if (position==16){
                         goTargetPage(DragPhotoViewActivity.class);
+                    }else if (position==17){
+                        goTargetPage(VRActivity.class);
                     }
                 }
             });

@@ -40,7 +40,7 @@
         <activity android:name=".ScrollingActivity"/>
         <activity android:name=".zoomanim.FeedActivity"/>
         <activity android:name=".zoomanim.DetailActivity"/>
-        <activity android:name=".JsoupActivity">
+        <activity android:name=".jsoup.JsoupActivity">
         </activity>
         <activity android:name=".SymptomActivity">
         </activity>
@@ -48,11 +48,11 @@
         </activity>
         <activity android:name=".CalendarActivity">
         </activity>
-        <activity
-            android:name=".DragPhotoViewActivity"
-        >            <!--android:theme="@style/translucent"-->
+        <activity android:name=".DragPhotoViewActivity"> <!-- android:theme="@style/translucent" -->
         </activity>
         <activity android:name=".DragPhotoActivity">
+        </activity>
+        <activity android:name=".VRActivity">
         </activity>
     </application>
 

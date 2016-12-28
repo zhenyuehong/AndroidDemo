@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.2"
     defaultConfig {
         applicationId "com.mtelnet.myview"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -30,16 +30,17 @@ dependencies {
     //仿iOS选择
     compile 'com.airsaid.library:pickerviewlibrary:1.0.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
-
     compile 'com.android.support:design:24.2.0'
-//    logger
+    //    logger
     compile 'com.orhanobut:logger:1.15'
-
     //网页数据抓取
     compile 'org.jsoup:jsoup:1.10.1'
-
     //calendar
     compile 'com.github.codbking:CalendarExaple:v1.0.0'
-//    微信拖拽透明返回 PhotoView
+    //    微信拖拽透明返回 PhotoView
     compile 'com.github.githubwing:DragPhotoView:1.0.1'
+    //    谷歌VR的SDK依赖 注意支持的最小SDK minSdkVersion 19
+    compile 'com.google.vr:sdk-panowidget:1.10.0'
+    //design
+    compile 'com.android.support:design:25.1.0'
 }
