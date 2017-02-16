@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.mtelnet.myview.flipperviewlib.FlipperviewActivity;
 import com.mtelnet.myview.jsoup.JsoupActivity;
 import com.mtelnet.myview.zoomanim.FeedActivity;
 
@@ -18,24 +19,29 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    String str1 = "自定义View进阶 - 绘制基本图形";
-    String str2 = "自定义View进阶 - 画布操作";
-    String str3 = "Notification";
-    String str4 = "轮播图";
-    String str5 = "自定义加减view";
-    String str6 = "自定义View进阶 - Path完结篇(伪)";
-    String str7 = "自定义CircleProgressBar-显示进度";
-    String str8 = "EditText 输入百分数";
-    String str9 = "Activity 共享元素转场动画";
-    String str10 = "android图片中添加文字水印";
-    String str11 = "使用 CoordinatorLayout 实现复杂联动效果 ";
-    String str12 = "仿iOS dialog";
-    String str13 = "使用jsoup抓取网页数据";
-    String str14 = "标签云";
-    String str15 = "下拉刷新RefreshLayout";
-    String str16 = "日历";
-    String str17 = "仿微信朋友圈图片拖拽透明返回";
-    String str18 = "VR demo";
+    String str1 = "1、自定义View进阶 - 绘制基本图形";
+    String str2 = "2、自定义View进阶 - 画布操作";
+    String str3 = "3、Notification";
+    String str4 = "4、轮播图";
+    String str5 = "5、自定义加减view";
+    String str6 = "6、自定义View进阶 - Path完结篇(伪)";
+    String str7 = "7、自定义CircleProgressBar-显示进度";
+    String str8 = "8、EditText 输入百分数";
+    String str9 = "9、Activity 共享元素转场动画";
+    String str10 = "10、android图片中添加文字水印";
+    String str11 = "11、使用 CoordinatorLayout 实现复杂联动效果 ";
+    String str12 = "12、仿iOS dialog";
+    String str13 = "13、使用jsoup抓取网页数据";
+    String str14 = "14、标签云";
+    String str15 = "15、下拉刷新RefreshLayout";
+    String str16 = "16、日历";
+    String str17 = "17、仿微信朋友圈图片拖拽透明返回";
+    String str18 = "18、VR demo";
+    String str19 = "19、OCR之图像识别";
+    String str20 = "20、圆圈进度条";
+    String str21 = "21、动画练习";
+    String str22 = "22、翻页动画练习";
+    String str23 = "23、轮播2";
     private List<String> mList = new ArrayList<>();
 
     @Override
@@ -60,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         mList.add(str16);
         mList.add(str17);
         mList.add(str18);
+        mList.add(str19);
+        mList.add(str20);
+        mList.add(str21);
+        mList.add(str22);
+        mList.add(str23);
 
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycle);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -100,26 +111,35 @@ public class MainActivity extends AppCompatActivity {
                         goTargetPage(FeedActivity.class);
                     } else if (position == 9) {
                         goTargetPage(DrawTextToBitmapActivity.class);
-                    }else if (position==10){
+                    } else if (position == 10) {
                         goTargetPage(ScrollingActivity.class);
-                    }else if (position==11){
+                    } else if (position == 11) {
                         goTargetPage(IOSDialogActivity.class);
-                    }else if (position==12){
+                    } else if (position == 12) {
                         goTargetPage(JsoupActivity.class);
-                    }else if (position==13){
+                    } else if (position == 13) {
                         goTargetPage(SymptomActivity.class);
-                    }else if (position==14){
+                    } else if (position == 14) {
                         goTargetPage(RefreshLayoutActivity.class);
-                    }else if (position==15){
+                    } else if (position == 15) {
                         goTargetPage(CalendarActivity.class);
-                    }else if (position==16){
+                    } else if (position == 16) {
                         goTargetPage(DragPhotoViewActivity.class);
-                    }else if (position==17){
+                    } else if (position == 17) {
                         goTargetPage(VRActivity.class);
+                    } else if (position == 18) {
+                        goTargetPage(OCRActivity.class);
+                    } else if (position == 19) {
+                        goTargetPage(ColorRingProgressActivity.class);
+                    } else if (position == 20) {
+                        goTargetPage(AnimationActivity.class);
+                    } else if (position == 21) {
+                        goTargetPage(FlipperviewActivity.class);
+                    }else if (position == 22) {
+                        goTargetPage(AutoChangeActivity.class);
                     }
                 }
             });
-
         }
 
         @Override

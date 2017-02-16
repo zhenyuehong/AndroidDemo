@@ -8,4 +8,11 @@
     <color name="colorCollapsedFloatBackground">#e4e4e4</color>
 
     <color name="symptom_selected_bg_color">#0EA7FF</color>
+
+
+    <color name="exampleColor1">#FFFF8911</color>
+    <color name="exampleColor2">#FFFF6C11</color>
+    <color name="exampleColor3">#FFFF3F11</color>
+    <color name="exampleColor4">#FFFF1111</color>
+    <color name="exampleColor5">#FF91AE59</color>
 </resources>

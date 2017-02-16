@@ -1,32 +1,51 @@
 package com.mtelnet.myview.jsoup;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.mtelnet.myview.R;
+import com.mtelnet.myview.jsoup.adapter.JsoupPageAdapter;
+import com.mtelnet.myview.jsoup.bean.Cmenu;
+import com.mtelnet.myview.jsoup.bean.Food;
+import com.mtelnet.myview.jsoup.fragment.FoodFragment;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class JsoupActivity extends AppCompatActivity {
-    private TextView tv_web_msg;
-    private LinearLayout layout_title;
+    private TabLayout mTablayout;
+    private ViewPager mViewPager;
+    private List<Food> mFood=new ArrayList<>();
+    private List<Cmenu> mMenu=new ArrayList<Cmenu>();;
+    private List<FoodFragment> mFragment=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jsoup);
+        getData();
 
-        layout_title = (LinearLayout) findViewById(R.id.lay_title);
-        tv_web_msg = (TextView) findViewById(R.id.tv_web_msg);
 
-//        addTitle();
+    }
 
+    private void initView() {
+        mTablayout = (TabLayout) findViewById(R.id.lay_tab);
+        mViewPager = (ViewPager) findViewById(R.id.lay_viewpage);
+        JsoupPageAdapter adapter = new JsoupPageAdapter(getSupportFragmentManager(),mMenu,mFragment);
+
+        mViewPager.setAdapter(adapter);
+        mTablayout.setupWithViewPager(mViewPager);
+    }
+
+    private void getData() {
         new Thread() {
             @Override
             public void run() {
@@ -38,12 +57,21 @@ public class JsoupActivity extends AppCompatActivity {
 
 //                    菜谱title
                     final Elements title_elements = doc.select("div.nav_wrap2");
-                    for (Element title_ele : title_elements) {
-                        Elements title_item = title_ele.getElementsByTag("li");
+//                    mMenu=new ArrayList<Cmenu>();
+                    for (int i=0;i<title_elements.size();i++) {
+                        Elements title_item = title_elements.get(i).getElementsByTag("li");
                         if (null != title_item) {
-                            for (Element title_element:title_item){
-                                String title = title_element.select("a").text();
-                                Log.i("title",  "菜谱:"+title );
+                            for (int j=0;j<title_item.size();j++) {
+                                String title = title_item.get(j).select("a").text();
+                                String url = title_item.get(j).select("a").attr("href");
+                                Log.i("title", "菜谱:" + title);
+                                Log.i("href", "菜谱url:" + url);
+                                FoodFragment mFoodFragment=new FoodFragment();
+                                Cmenu menu=new Cmenu();
+                                menu.setTitle(title);
+                                menu.setUrl(url);
+                                mMenu.add(menu);
+                                mFragment.add(mFoodFragment);
                             }
 
                         }
@@ -69,7 +97,7 @@ public class JsoupActivity extends AppCompatActivity {
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    tv_web_msg.setText(title + "" + subContent);
+//                                    tv_web_msg.setText(title + "" + subContent);
                                 }
                             });
                         }
@@ -82,7 +110,7 @@ public class JsoupActivity extends AppCompatActivity {
                     for (Element picture : pics) {
                         String item_url = picture.select("a").attr("href");
                         Log.i("item_url", item_url + "     --->菜谱链接");
-                        String pic_url=picture.select("img").attr("data-src");
+                        String pic_url = picture.select("img").attr("data-src");
                         Log.i("pic_url", pic_url + "     --->图片链接");
                     }
 
@@ -91,6 +119,9 @@ public class JsoupActivity extends AppCompatActivity {
                 }
             }
         }.start();
+        initView();
 
     }
+
+
 }

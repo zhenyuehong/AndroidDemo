@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_icon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mtelnet.myview.AnimationActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="fromLeft"
+                android:text="左滑出"
+                android:textAllCaps="false"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="fromRight"
+                android:text="右滑出" android:textAllCaps="false"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="fromUp"
+                android:text="上滑出" android:textAllCaps="false"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="fromDown"
+                android:text="下滑出" android:textAllCaps="false"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="scaleToScreen"
+                android:text="scale" android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/img"
+               android:layout_width="200dp"
+               android:layout_height="150dp"
+               android:layout_centerInParent="true"
+               android:adjustViewBounds="true"
+               android:background="@drawable/bg_header"
+               android:visibility="gone"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true" android:orientation="horizontal">
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="scaleToAllWidth"
+                android:text="scale 宽" android:textAllCaps="false"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="scaleToAllHeight"
+                android:text="scale 高" android:textAllCaps="false"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="scaleToAllScreen"
+                android:text="scale to all" android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

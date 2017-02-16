@@ -3,8 +3,12 @@
           package="com.mtelnet.myview">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -53,6 +57,40 @@
         <activity android:name=".DragPhotoActivity">
         </activity>
         <activity android:name=".VRActivity">
+        </activity>
+        <activity android:name=".OCRActivity">
+        </activity>
+        <activity android:name=".ColorRingProgressActivity">
+        </activity>
+        <activity android:name=".AnimationActivity">
+        </activity>
+        <!-- 切换图标和app名称 -->
+        <activity-alias
+            android:name=".Test1"
+            android:enabled="false"
+            android:icon="@mipmap/launcher_icon1"
+            android:label="双11"
+            android:targetActivity=".AnimationActivity">
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </activity-alias>
+        <activity-alias
+            android:name=".Test2"
+            android:enabled="false"
+            android:icon="@mipmap/bug"
+            android:label="双12"
+            android:targetActivity=".AnimationActivity">
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </activity-alias>
+
+        <activity android:name=".testanim.ShowAnimActivity">
+        </activity>
+        <activity android:name=".flipperviewlib.FlipperviewActivity">
+        </activity>
+        <activity android:name=".AutoChangeActivity">
         </activity>
     </application>
 

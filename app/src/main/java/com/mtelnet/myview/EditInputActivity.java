@@ -10,6 +10,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 
+import com.mtelnet.myview.utils.EditTextHelper;
+
 public class EditInputActivity extends AppCompatActivity {
     private static final String INT_REGEX = "^[1-9]\\d*$";
     private static final String DECIMAL_REGEX = "^[0-9]+(\\.[0-9]+)?$";
@@ -90,6 +92,11 @@ public class EditInputActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+
+        EditText et_limit2= (EditText) findViewById(R.id.et_limit2);
+        EditTextHelper.INSTANCE.limitTwoDecimalPlaces(et_limit2);
     }
 
 

@@ -1,16 +1,16 @@
 package com.mtelnet.myview;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+
+import com.mtelnet.myview.utils.Utils;
 
 public class DrawTextToBitmapActivity extends AppCompatActivity {
 
@@ -20,50 +20,40 @@ public class DrawTextToBitmapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_draw_text_to_bitmap);
         ImageView iv_draw= (ImageView) findViewById(R.id.iv_draw);
 
-        iv_draw.setImageBitmap(drawTextToBitmap(this,R.mipmap.ic_launcher,"zhenyue_dasdasdsadfdfdsfsdtest"));
+
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bg_header);
+        Bitmap watermarBm=AddWatermark(this,bitmap,"zhenyue");
+        iv_draw.setImageBitmap(watermarBm);
     }
 
+    public static  Bitmap AddWatermark(Context context,Bitmap bm,String string){
+      int width=bm.getWidth();
+        int height=bm.getHeight();
 
-    /* 添加文字到图片，类似水印文字。
-            * @param gContext
-    * @param gResId
-    * @param gText
-    * @return
-            */
-    public static Bitmap drawTextToBitmap(Context gContext, int gResId, String gText) {
-        Resources resources = gContext.getResources();
-        float scale = resources.getDisplayMetrics().density;
-        Bitmap bitmap = BitmapFactory.decodeResource(resources, gResId);
+        Bitmap bitmap=Bitmap.createBitmap(width,height, Bitmap.Config.ARGB_8888);
+        Canvas canvas=new Canvas(bitmap);
 
-        android.graphics.Bitmap.Config bitmapConfig = bitmap.getConfig();
-        // set default bitmap config if none
-        if (bitmapConfig == null) {
-            bitmapConfig = android.graphics.Bitmap.Config.ARGB_8888;
-        }
-        // resource bitmaps are imutable,
-        // so we need to convert it to mutable one
-        bitmap = bitmap.copy(bitmapConfig, true);
+        Paint paint=new Paint();
 
-        Canvas canvas = new Canvas(bitmap);
-        // new antialised Paint
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        // text color - #3D3D3D
-        paint.setColor(Color.rgb(61, 61, 61));
-        // text size in pixels
-        paint.setTextSize((int) (14 * scale * 5));
-        // text shadow
-        paint.setShadowLayer(1f, 0f, 1f, Color.BLACK);
+        //设置水印颜色
+        paint.setColor(Color.RED);
 
-        // draw text to the Canvas center
-        Rect bounds = new Rect();
-        paint.getTextBounds(gText, 0, gText.length(), bounds);
-        //int x = (bitmap.getWidth() - bounds.width()) / 2;
-        //int y = (bitmap.getHeight() + bounds.height()) / 2;
-        //draw  text  to the bottom
-        int x = (bitmap.getWidth() - bounds.width()) / 10 * 9;
-        int y = (bitmap.getHeight() + bounds.height()) / 10 * 9;
-        canvas.drawText(gText, x, y, paint);
+        //设置水印字体大小
+        paint.setTextSize(Utils.dip2px(context,60));
+
+        //去锯齿
+        paint.setAntiAlias(true);
+
+        //获取原图片的内容
+        canvas.drawBitmap(bm,0,0,paint);
+
+        //在最右下方位置添加水印
+        canvas.drawText(string,width*3/4,height-Utils.dip2px(context,36),paint);
+
+        canvas.save(Canvas.ALL_SAVE_FLAG);
+        canvas.restore();
 
         return bitmap;
-    }
+    };
+
 }
